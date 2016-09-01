@@ -6,4 +6,5 @@ RUN apk add --no-cache --update bash curl tzdata && \
     curl -S -o /ecs-cli https://s3.amazonaws.com/amazon-ecs-cli/ecs-cli-linux-amd64-latest && \
     chmod 755 /ecs-cli
 
+
 ENTRYPOINT ["/ecs-cli"]
